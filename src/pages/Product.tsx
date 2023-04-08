@@ -19,12 +19,12 @@ export default function Product() {
   const navigate = useNavigate();
   const typesGasoil = [
     {
-      type: "Gasolina SP 95",
+      type: "Gasoline SP 95",
       price: "1,65",
       imageSrc: ImageGasoil,
     },
     {
-      type: "Gasóleo A",
+      type: "Diesel A",
       price: "1,55",
       imageSrc: ImageGasoilA,
     },
@@ -49,7 +49,7 @@ export default function Product() {
   return (
     <>
       <Heading textAlign="center" size="lg" marginBottom={10}>
-        Selecciona el producto
+        Select the product
       </Heading>
       <Grid templateColumns="repeat(2, 1fr)" gap={9}>
         {typesGasoil.map((gasoil, index) => (
@@ -78,9 +78,9 @@ export default function Product() {
                 marginTop={4}
                 marginBottom={3}
               >
-                <Heading size="sm">Price actual</Heading>
+                <Heading size="sm">Current price</Heading>
                 <Heading size="md" fontWeight="extrabold">
-                  {gasoil.price}€
+                  ${gasoil.price}
                 </Heading>
               </Box>
             </Box>
@@ -105,7 +105,7 @@ export default function Product() {
             colorScheme="teal"
             variant="outline"
           >
-            Volver al surtidor
+            Go back
           </Button>
         </Stack>
       </Box>

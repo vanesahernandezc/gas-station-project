@@ -8,27 +8,27 @@ export default function Surtidor() {
   const surtidores = [
     {
       id: 1,
-      name: "surtidor 1",
+      name: "pump 1",
     },
     {
       id: 2,
-      name: "surtidor 2",
+      name: "pump 2",
     },
     {
       id: 3,
-      name: "surtidor 3",
+      name: "pump 3",
     },
     {
       id: 4,
-      name: "surtidor 4",
+      name: "pump 4",
     },
     {
       id: 5,
-      name: "surtidor 5",
+      name: "pump 5",
     },
     {
       id: 6,
-      name: "surtidor 6",
+      name: "pump 6",
     },
   ];
 
@@ -40,7 +40,7 @@ export default function Surtidor() {
   return (
     <>
       <Heading textAlign="center" marginBottom="5">
-        Selecciona el surtidor
+        Select fuel pump
       </Heading>
       <Grid templateColumns="repeat(2, 1fr)" gap={9}>
         {surtidores.map((surtidor) => (

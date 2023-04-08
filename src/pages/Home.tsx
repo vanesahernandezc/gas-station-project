@@ -33,10 +33,10 @@ export default function Home() {
         >
           <div>
             <Heading fontSize="7xl" color="white">
-              Empezar
+              Start
             </Heading>
             <Heading fontSize="4xl" color="white">
-              Pulsa aquí
+              Click here
             </Heading>
           </div>
           <Image src={ImageClick} alt="Click Here" width="150px" />
@@ -51,7 +51,7 @@ export default function Home() {
           cursor="pointer"
           borderRadius="10"
         >
-          <Heading fontSize="4xl">Identificarse como cliente</Heading>
+          <Heading fontSize="4xl">Identify as a customer</Heading>
           <Image src={ImageClient} alt="Client" width="100px" />
         </Box>
       </Stack>
